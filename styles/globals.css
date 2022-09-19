@@ -1,9 +1,15 @@
+:root {
+  --dark: #020621;
+  --blue: #028a9c;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: var(--dark);
 }
 
 a {
@@ -15,12 +21,57 @@ a {
   box-sizing: border-box;
 }
 
+.main-title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.second-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.btn.main-button {
+  background-color: var(--blue);
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 0;
+}
+
+/* === Utilities === */
+.overflow-x-auto {
+  overflow-x: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.overflow-x-auto::-webkit-scrollbar {
+  display: none;
+}
+/* === End of Utilities === */
+
+.sample-box {
+  width: 100%;
+  height: 280px;
+}
+
 @media (prefers-color-scheme: dark) {
-  html {
+  /* html {
     color-scheme: dark;
   }
   body {
     color: white;
     background: black;
-  }
+  } */
 }
